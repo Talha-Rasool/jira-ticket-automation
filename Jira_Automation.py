@@ -14,7 +14,7 @@ def createJIRA():
     comment=github_payload['comment']
 
     issue_title=github_payload["issue"]["title"]
-    user_login=github_payload["user"]["login"]
+    user_login=github_payload["issue"]["user"]["login"]
 
     print(f"Github Webhook-Payload : {github_payload}")
 
